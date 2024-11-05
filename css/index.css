@@ -1,0 +1,670 @@
+@font-face {
+  font-family: "Poppins-100";
+  src: url(../fonts/Poppins/Poppins-Light.ttf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Poppins-400";
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins-800";
+  src: url(../fonts/Poppins/Poppins-ExtraBold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Montserrat-400";
+  src: url(../fonts/Montserrat/static/Montserrat-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Montserrat-800";
+  src: url(../fonts/Montserrat/static/Montserrat-ExtraBold.ttf);
+  font-weight: 800;
+}
+:root {
+  --title-color: #343434;
+  --bs-link-color: var(--title-color);
+  --shadow: rgba(50, 50, 93, 0.25) 0px 0px 0px -10px,
+    rgba(0, 0, 0, 0.3) 0px 0px 0px -10px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  --bg-color: #f7f7f7;
+  --bs-border-radius: 0.6rem;
+  --bs-border-width: 0px;
+}
+/* start nav */
+.navbar-dark {
+  --bs-navbar-color: rgba(255, 255, 255, 1);
+}
+nav.navbar {
+  font-family: "Poppins-100";
+  font-size: 0.9rem;
+}
+.my-nav .navbar-nav .nav-link,
+.my-nav {
+  padding: 0 1.2rem;
+}
+
+.my-nav {
+  padding: 1rem 12.5rem;
+}
+nav .logo {
+  font-family: "Poppins-800";
+}
+.my-nav .navbar-nav .nav-link {
+  position: relative;
+}
+.navbar-nav .nav-link.active {
+  background: transparent;
+}
+.my-nav .navbar-nav .nav-link.active::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: #fff;
+  bottom: 0;
+  left: 20px;
+  transition: all 1s;
+}
+.my-nav .navbar-nav .nav-link.blac::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: #000;
+  bottom: 0;
+  left: 20px;
+  transition: all 1s;
+}
+
+/* end nav */
+/* start  hero */
+.hero-sec {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../imgs/imgs/bg.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.hero-sec .content h1 {
+  font-size: 4rem;
+}
+.hero-sec .content p {
+  font-size: 3.5rem;
+}
+.content .icons a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 0 5px;
+}
+/* end hero */
+/* start about */
+section .container {
+  padding: 6.5rem;
+  font-family: "Montserrat-400";
+}
+
+.about-sec .inner > span {
+  color: #8a8a8a;
+  letter-spacing: 2px;
+  font-size: 13px;
+  display: block;
+  padding-top: 5px;
+}
+.about-sec .inner p {
+  color: #748182;
+  font-size: 15px;
+}
+.about-sec .inner-img {
+  position: relative;
+}
+.about-sec .inner-img::after {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 80%;
+  z-index: -1;
+  background-image: url(../imgs/imgs/dots.png);
+  right: 30%;
+  top: 30%;
+}
+.skills-precentage div {
+  box-shadow: var(--shadow);
+  height: 25px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+  font-size: 12px;
+}
+.skills-precentage div::after {
+  position: absolute;
+  content: "";
+
+  height: 100%;
+  background-color: #161414;
+  bottom: 0;
+  left: 0px;
+  z-index: -1;
+
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+}
+.skills-precentage div.w-95::after {
+  width: 95%;
+}
+.skills-precentage div.w-80::after {
+  width: 80%;
+}
+.skills-precentage div.w-90::after {
+  width: 90%;
+}
+.skills-precentage div.w-95 span {
+  position: relative;
+  left: 70%;
+}
+.skills-precentage div.w-80 span {
+  position: relative;
+  left: 58%;
+}
+.skills-precentage div.w-90 span {
+  position: relative;
+  left: 63%;
+}
+
+.btns .btn {
+  font-size: 13px;
+  border: #161414 1px solid;
+  background-color: #161414;
+  color: #fff;
+  transition: all 0.5s;
+}
+.btns .btn-trans {
+  background-color: #fff;
+  color: #161414;
+}
+.btns .btn-dar:hover {
+  background-color: transparent;
+  color: black;
+}
+.btns .btn-trans:hover {
+  color: #fff;
+  background-color: #161414;
+}
+
+/* end about */
+section h2 {
+  font-family: "Montserrat-800";
+  color: var(--title-color);
+  font-size: 2.5rem;
+  position: relative;
+  z-index: 0;
+  text-transform: capitalize;
+  display: inline-block;
+}
+section h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  background-image: url(../imgs/imgs/dots.png);
+  right: 0px;
+  top: 40%;
+  z-index: -1;
+}
+
+/* start services */
+.serv-sec {
+  background-color: var(--bg-color);
+  padding: 6rem 0;
+}
+.serv-sec .card .icon {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  color: var(--title-color);
+  font-size: 25px;
+  transition: all 0.5s;
+}
+.serv-sec .card {
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+.serv-sec .card .icon:hover {
+  background-color: var(--title-color);
+  color: #f4f4f4;
+}
+.serv-sec h5 {
+  font-family: "Poppins-800";
+  color: var(--title-color);
+}
+.serv-sec .card-text {
+  word-spacing: 2px;
+  line-height: 1.6;
+  font-family: "Montserrat-400";
+  font-size: 13px;
+}
+/* end services */
+
+/* start porto */
+.porto-sec {
+  text-align: center;
+  padding: 6rem 0;
+}
+.porto-sec .nav-pills {
+  --bs-nav-pills-link-active-color: var(--title-color);
+  --bs-nav-pills-link-active-bg: var(--title-color);
+  --bs-link-hover-color: var(--title-color);
+
+  font-family: "Montserrat-800";
+}
+.porto-sec .container {
+  padding: 2rem 6rem;
+}
+.porto-sec .nav-pills button {
+  position: relative;
+}
+.porto-sec .nav-pills button.active::after {
+  position: absolute;
+  content: "";
+  width: calc(100% - 32px);
+  height: 3px;
+  background-color: var(--title-color);
+  bottom: 0;
+  left: 16px;
+}
+/* tab content */
+.porto-sec .porto-card {
+  position: relative;
+  overflow: hidden;
+}
+.porto-sec .layer-content {
+  background-color: #ffffff;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 10%;
+  left: 0;
+  transition: all 0.6s;
+  color: var(--title-color);
+  border: #dddddd8c 6px solid;
+}
+.porto-sec .layer-content h3 {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  font-family: "Montserrat-400";
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: all 0.6s;
+}
+
+.layer-content .icons > a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--title-color);
+  color: #fff;
+  font-size: 11px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: all 0.6s;
+  transform: translateY(20px);
+  opacity: 0;
+}
+.layer-content .icons > a:hover {
+  color: var(--title-color);
+  background-color: #fff;
+  border: #161414 solid 1px;
+}
+.porto-card:hover .layer-content .icons a {
+  transform: translateY(2px);
+  opacity: 1;
+}
+.porto-card:hover .layer-content h3 {
+  transform: translateY(-2px);
+  opacity: 1;
+}
+.porto-card:hover .layer-content {
+  top: 0;
+  opacity: 0.9;
+}
+/*start Testimonials*/
+.testimonials-sec {
+  margin-top: 60px;
+  background-color: var(--bg-color);
+  padding: 6rem 0;
+  /* height: 530px; */
+}
+.testimonials-sec > div {
+  padding-top: 3rem;
+}
+.testimonials-sec .carousel-item img {
+  /* to fix change in height of the whole carousel */
+  height: 100px;
+}
+.testimonials-sec .carousel-item figcaption {
+  width: 60%;
+  word-spacing: 2px;
+  font-size: 15px;
+  color: #748182;
+}
+.testimonials-sec .carousel-item figcaption h3,
+.testimonials-sec .carousel-item figcaption span {
+  word-spacing: 0px;
+  font-size: 14px;
+  margin: 0;
+  margin-top: 20px;
+}
+.testimonials-sec #carouselExampleIndicators {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonials-sec .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #c8c8c8ef;
+}
+/*end Testimonials*/
+/* start count */
+.count-sec .card {
+  background-color: transparent;
+  border: none;
+  color: var(--title-color);
+  font-family: "Poppins-400";
+}
+.count-sec .card-body span {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.count-sec .card-body h3 {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  padding-top: 10px;
+  color: #748182;
+}
+.card-icon i {
+  font-size: 2rem;
+}
+.count-sec .card-icon {
+  /* border: 10px solid #cde1f8; */
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  display: flex;
+
+  justify-content: center;
+  align-items: end;
+  transition: all 0.5s;
+}
+/* end start */
+/* start team */
+.team-sec {
+  background-color: var(--bg-color);
+  padding: 6rem 0;
+}
+.team-sec .card-img {
+  position: relative;
+  transition: all 1s;
+}
+.team-sec .layer-content {
+  background-color: #ffffff;
+  opacity: 0;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%;
+
+  transition: all 0.7s;
+  color: var(--title-color);
+}
+.team-sec .layer-content .icons {
+  list-style-type: none;
+  padding: 0;
+  opacity: 0;
+}
+.team-sec .layer-content .icons li {
+  width: 30px;
+  height: 30px;
+
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  transition: all 0.5s;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 1;
+}
+.team-sec .layer-content .icons li a {
+  color: #fff;
+  text-decoration: none;
+}
+/* hover */
+.team-sec .layer-content .icons > li:hover {
+  /* color: #000; */
+  background-color: #fff;
+  border: rgb(33, 37, 41) solid 1px;
+}
+.team-sec .layer-content .icons li:hover .team-linkicon {
+  color: rgb(33, 37, 41);
+}
+.team-sec .card:hover .layer-content {
+  transform: rotateY(180deg);
+  opacity: 0.9;
+  width: 95%;
+  height: 95%;
+  top: 2.5%;
+  left: 2.5%;
+}
+.team-sec .card:hover .layer-content .icons {
+  transform: rotateY(180deg);
+  opacity: 1;
+}
+.team-sec .card:hover .layer-content .icons li {
+  width: 40px;
+  height: 40px;
+}
+/* end team */
+/* start contact */
+.contact-sec {
+  padding: 6rem 0;
+}
+.contact-sec .container {
+  padding: 0 8rem;
+}
+.contact-sec .card-body {
+  color: var(--title-color);
+  font-family: "Poppins-400";
+}
+.contact-sec .card-body h5 {
+  font-size: 15px;
+}
+
+.contact-sec .card-body p {
+  font-size: 14px;
+  padding-top: 6rem;
+  color: #748182;
+}
+
+.contact-sec .icon {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  color: var(--title-color);
+  font-size: 1.3rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.contact-sec .con:hover .icon {
+  background-color: var(--title-color);
+  color: #f4f4f4;
+}
+/* form */
+.contact-sec form input,
+.contact-sec form textarea {
+  background-color: var(--bg-color);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 12px 15px;
+  color: #35393964;
+}
+.contact-sec form textarea {
+  height: 120px;
+}
+.contact-sec .form-control {
+  border-radius: 0%;
+  border: none;
+}
+.contact-sec .form-control:focus {
+  background-color: var(--bg-color);
+  box-shadow: none;
+}
+/* end contact */
+footer {
+  background-color: var(--title-color);
+  padding: 3rem 0;
+  text-align: center;
+}
+footer p {
+  color: #ffffffdd;
+  margin-bottom: 0;
+  font-family: "Poppins-400";
+  font-size: 12px;
+}
+
+/* media query */
+@media screen and (max-width: 576px) {
+  .my-nav {
+    padding: 2.2rem 0rem;
+  }
+  section .container {
+    padding: 6rem 1rem;
+  }
+  .porto-sec .container {
+    padding: 2rem 1rem;
+  }
+  .contact-sec .container {
+    padding: 0 1rem;
+  }
+  form {
+    padding-top: 50px;
+  }
+  .skills-precentage div.w-95 span {
+    position: relative;
+    left: 65%;
+  }
+  .skills-precentage div.w-80 span {
+    position: relative;
+    left: 53%;
+  }
+  .skills-precentage div.w-90 span {
+    position: relative;
+    left: 55%;
+  }
+  .about-sec .inner {
+    padding-top: 100px;
+  }
+}
+/* sm */
+
+@media screen and (min-width: 576px) and (max-width: 769px) {
+  section .container {
+    padding: 6rem 0rem;
+  }
+  .contact-sec .container {
+    padding: 6rem 0rem;
+  }
+  .porto-sec .container {
+    padding: 2rem 0rem;
+  }
+  .testimonials-sec .carousel-item figcaption {
+    width: 80%;
+  }
+  .my-nav {
+    padding: 2.2rem 2rem;
+  }
+  .about-sec .inner {
+    padding-top: 100px;
+  }
+}
+/* md */
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  section .container {
+    padding: 6rem 2rem;
+  }
+  .contact-sec .container {
+    padding: 6rem 2rem;
+  }
+  .porto-sec .container {
+    padding: 2rem 2rem;
+  }
+  .testimonials-sec .carousel-item figcaption {
+    width: 80%;
+  }
+  .my-nav {
+    padding: 2.2rem 4rem;
+  }
+  .about-sec .inner {
+    padding-top: 100px;
+  }
+}
+
+/* lg */
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  section .container {
+    padding: 6rem 2rem;
+  }
+  .about-sec .container {
+    padding: 6rem 0.5rem;
+  }
+
+  .my-nav {
+    padding: 2.2rem 4rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1490px) {
+  .my-nav {
+    padding: 2.2rem 4rem;
+  }
+  section .container {
+    padding: 6rem 2rem;
+  }
+  .contact-sec .container {
+    padding: 6rem 2rem;
+  }
+  .porto-sec .container {
+    padding: 2rem 2rem;
+  }
+}
